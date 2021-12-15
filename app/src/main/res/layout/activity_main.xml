@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EDDBBF"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -15,30 +15,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="CALCULATE YOUR"
-        android:textColor="@color/textColor"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:background="@color/ageTextBackgroundColor"
-        android:padding="10dp"
-        android:text="AGE"
-        android:textColor="@color/ageTextColor"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="IN MINUTES"
-        android:textColor="@color/textColor"
-        android:textSize="25sp"
+        android:layout_marginBottom="120dp"
+        android:text="Your Age Made More Fun"
+        android:textColor="@color/lightGreyTextColor"
+        android:textSize="25dp"
         android:textStyle="bold" />
 
     <Button
@@ -48,7 +28,7 @@
         android:layout_marginTop="15dp"
         android:backgroundTint="#EAE6E6"
         android:text="Select Date"
-        android:textColor="#888383"
+        android:textColor="@color/lightGreyTextColor"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -74,15 +54,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:textColor="@color/textColor"
-        android:textSize="35sp"/>
+        android:textSize="35sp" />
 
-    <TextView
+    <Spinner
+        android:id="@+id/unitOfTime"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="In minutes till date"
-        android:textColor="@color/lightGreyTextColor"
-        android:textSize="18sp"/>
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ageTextBackgroundColor"
+        android:text="CALCULATE"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/ageTextColor"
+        app:backgroundTint="@color/ageTextBackgroundColor" />
 
 
 </LinearLayout>
